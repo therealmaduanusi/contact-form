@@ -16,6 +16,7 @@
     transition: opacity 0.5s ease, visibility 0.5s ease;
     border-radius: 10px;
     line-height: 2rem;
+    margin: 0 1rem;
 }
 .message p:nth-child(2) {
     color: #E0F1E8;
@@ -33,6 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0 1rem;
 }
 
 .container {
