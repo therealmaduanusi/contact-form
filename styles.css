@@ -4,12 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* popup message */
+.message {
+    position: absolute;
+    top: 10px;
+    background-color: #2A4144;
+    padding: 0.5rem 1rem;
+    color: #FFF;
+    display: none;
+    border-radius: 10px;
+    line-height: 2rem;
+    transition: all 0.5s;
+}
+.message p:nth-child(2) {
+    color: #E0F1E8;
+}
+.message h4{
+    display: flex;
+    column-gap: 10px;
+}
 
-/* body {
-    font-family: "Karla", sans-serif;
-    background-color: #E0F1E8;
-    line-height: 3rem;
-} */
+/* STYLES */
 body {
     font-family: "Karla", sans-serif;
     background-color: #edf5f2;
@@ -35,13 +50,16 @@ form h2 {
     margin-bottom: 15px;
 }
 
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
 }
 
 .form-group span {
-    color: red;
+    color: #009688;
 }
 
 input[type="text"],
@@ -49,29 +67,39 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #E0F1E8;
     border-radius: 4px;
+    outline-color: #00796b;
 }
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    cursor: pointer;
+    border: 1px solid #00796b;
+}
+
 
 textarea {
     resize: none;
 }
 
-.radio-group {
-    display: flex;
-    gap: 10px;
-}
-
 .radio-group input {
     margin-top: 0;
+    accent-color: #0C7D69;
 }
 
+
 .radio-group label {
+    padding: 1rem;
+    border: 1px solid #E0F1E8;
+    border-radius: 10px;
     margin-top: 0;
 }
 
 input[type="checkbox"] {
     margin-right: 5px;
+    accent-color: #0C7D69;
 }
 
 button {
@@ -83,6 +111,7 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
+    font-family: "Karla", sans-serif;
 }
 
 button:hover {
@@ -109,5 +138,9 @@ button:hover {
     #contact-form > .form-group-message,
     #contact-form > .form-group-consent {
         grid-column: 1 / 3;
+    }
+    .radio-group {
+        display: flex;
+        gap: 10px;
     }
 }

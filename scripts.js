@@ -55,7 +55,14 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     if (valid) {
         // Submit the form or perform further processing
-        alert('Form submitted successfully!');
+        let message = document.querySelector('.message');
+        message.style.display = 'block'
+        message.innerHTML = `
+            <div>
+                <h4><img src="/img/Vector.svg" alt="sent">Message Sent!</h4>
+                <p>Thanks for completing the form. We’ll be in touch soon!</p>
+            </div>
+        `
         form.reset();
     }
 });
