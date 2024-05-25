@@ -11,10 +11,11 @@
     background-color: #2A4144;
     padding: 0.5rem 1rem;
     color: #FFF;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
     border-radius: 10px;
     line-height: 2rem;
-    transition: all 0.5s;
 }
 .message p:nth-child(2) {
     color: #E0F1E8;

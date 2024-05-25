@@ -56,7 +56,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     if (valid) {
         // Submit the form or perform further processing
         let message = document.querySelector('.message');
-        message.style.display = 'block'
+        message.style.opacity = 1;
+        message.style.visibility = 'visible'
         message.innerHTML = `
             <div>
                 <h4><img src="/img/Vector.svg" alt="sent">Message Sent!</h4>
